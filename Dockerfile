@@ -14,12 +14,11 @@ COPY package.json ./
 RUN npm install
 
 # And now let's copy our code into the container
-COPY . /data
+COPY . ./
 
 # Mapping volumes https://docs.resin.io/learn/develop/multicontainer/#named-volumes
-# a link will automatically be created from the '/data' (CONTAINER 'main') to '/resin-data' named volume (HOST)
-# This will allow the communcation with the CONTAINER using the /resin-data folder of the HOST
-VOLUME /resin-data:/data
+# a link will automatically be created from the '/data' (CONTAINER 'main')
+#    to '/var/lib/docker/volumes/<APP ID>_resin-data/_data' named volume (HOST)
 
 # Execute our code when the container starts up
 CMD node src/app.js
