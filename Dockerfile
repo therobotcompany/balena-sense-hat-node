@@ -11,8 +11,7 @@ RUN JOBS=MAX npm install -g node-gyp \
 COPY package.json ./
 
 # Let's install our dependencies
-RUN npm install
-# RUN JOBS=MAX npm install --production --unsafe-perm && npm cache clean && rm -rf /tmp/*
+RUN JOBS=MAX npm install --production --unsafe-perm && npm cache clean && rm -rf /tmp/*
 
 # And now let's copy our code into the container
 COPY . ./
