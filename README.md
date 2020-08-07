@@ -1,3 +1,5 @@
+Forked from https://github.com/balena-io-playground/sense-hat-base-application
+    - There are new commits to merge
 
 ```app.js```: start script -> playing with a ball using the Sense Hat joystick
 ```pixel.js``` : sample test, coloring a pixel of the led matrix
