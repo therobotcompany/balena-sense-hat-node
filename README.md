@@ -11,6 +11,51 @@ Forked from https://github.com/balena-io-playground/sense-hat-base-application
         - NO: npm `nodeimu` requires `node-gyp@6.1.0`
         - TESTING: Outdated version of npm
 
+Current Python error with `balenalib/%%BALENA_MACHINE_NAME%%-node:10`:
+```
+[main]     gyp ERR! find Python
+[main]     gyp ERR! find Python Python is not set from command line or npm configuration
+[main]     gyp ERR! find Python Python is not set from environment variable PYTHON
+[main]     gyp ERR! find Python checking if "python" can be used
+[main]     gyp ERR! find Python - "python" is not in PATH or produced an error
+[main]     gyp ERR! find Python checking if "python2" can be used
+[main]     gyp ERR! find Python - "python2" is not in PATH or produced an error
+[main]     gyp ERR! find Python checking if "python3" can be used
+[main]     gyp ERR! find Python - "python3" is not in PATH or produced an error
+[main]     gyp ERR! find Python
+[main]     gyp ERR! find Python **********************************************************
+[main]     gyp ERR! find Python You need to install the latest version of Python.
+[main]     gyp ERR! find Python Node-gyp should be able to find and use Python. If not,
+[main]     gyp ERR! find Python you can try one of the following options:
+[main]     gyp ERR! find Python - Use the switch --python="/path/to/pythonexecutable"
+[main]     gyp ERR! find Python   (accepted by both node-gyp and npm)
+[main]     gyp ERR! find Python - Set the environment variable PYTHON
+[main]     gyp ERR! find Python - Set the npm configuration variable python:
+[main]     gyp ERR! find Python   npm config set python "/path/to/pythonexecutable"
+[main]     gyp ERR! find Python For more information consult the documentation at:
+[main]     gyp ERR! find Python https://github.com/nodejs/node-gyp#installation
+[main]     gyp ERR! find Python **********************************************************
+[main]     gyp ERR! find Python
+[main]     gyp ERR! configure error
+[main]     gyp ERR! stack Error: Could not find any Python installation to use
+[main]     gyp ERR! stack     at PythonFinder.fail (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/find-python.js:307:47)
+[main]     gyp ERR! stack     at PythonFinder.runChecks (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/find-python.js:136:21)
+[main]     gyp ERR! stack     at PythonFinder.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/find-python.js:179:16)
+[main]     gyp ERR! stack     at PythonFinder.execFileCallback (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/find-python.js:271:16)
+[main]     gyp ERR! stack     at exithandler (child_process.js:301:5)
+[main]     gyp ERR! stack     at ChildProcess.errorhandler (child_process.js:313:5)
+[main]     gyp ERR! stack     at ChildProcess.emit (events.js:198:13)
+[main]     gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:246:12)
+[main]     gyp ERR! stack     at onErrorNT (internal/child_process.js:415:16)
+[main]     gyp ERR! stack     at process._tickCallback (internal/process/next_tick.js:63:19)
+[main]     gyp ERR! System Linux 4.15.0-45-generic
+[main]     gyp ERR! command "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+[main]     gyp ERR! cwd /usr/src/app/node_modules/ioctl
+[main]     gyp ERR! node -v v10.22.0
+[main]     gyp ERR! node-gyp -v v5.1.0
+[main]     gyp ERR! not ok
+```
+
 ```app.js```: start script -> playing with a ball using the Sense Hat joystick
 ```pixel.js``` : sample test, coloring a pixel of the led matrix
 
