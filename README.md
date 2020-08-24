@@ -1,7 +1,12 @@
 Forked from https://github.com/balena-io-playground/sense-hat-base-application
     - There are new commits to merge
 
-**NOTE:** *This application communicates with the Sense Hat using the NodeJS library `node-sense-hat`*
+**NOTE 1:** *This application communicates with the Sense Hat using the NodeJS library `node-sense-hat`*
+
+**NOTE 2:** *It only works with `resin/raspberrypi3-node-6`*
+   - It works with base image `resin/raspberrypi3-node-6`, but not with `...-node-8`
+   - It doesn't work with `balenalib/raspberrypi3-node-6,10,12`
+   - It doesn't work with `balenalib/raspberrypi3-debian-node-12`
 
 ```app.js```: start script -> playing with a ball using the Sense Hat joystick
 ```pixel.js``` : sample test, coloring a pixel of the led matrix
