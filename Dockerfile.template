@@ -4,7 +4,7 @@ FROM resin/%%BALENA_MACHINE_NAME%%-node:6
 # Move into a working directory
 WORKDIR /usr/src/app
 
-RUN JOBS=MAX npm install -g npm@latest node-gyp@6.1.0 \
+RUN JOBS=MAX npm install -g node-gyp \
           && npm cache clean --force && rm -rf /tmp/*
 
 # Copy our package.json into the container. This tells npm about the
