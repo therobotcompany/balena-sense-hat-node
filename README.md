@@ -7,6 +7,9 @@ Forked from https://github.com/balena-io-playground/sense-hat-base-application
    - It works with base image `resin/raspberrypi3-node-6`, but not with `...-node-8`
    - It doesn't work with `balenalib/raspberrypi3-node-6,10,12`
    - It doesn't work with `balenalib/raspberrypi3-debian-node-12`
+   - POSSIBLE CAUSES:
+        - NO: npm `nodeimu` requires `node-gyp@6.1.0`
+        - TESTING: Outdated version of npm
 
 ```app.js```: start script -> playing with a ball using the Sense Hat joystick
 ```pixel.js``` : sample test, coloring a pixel of the led matrix
