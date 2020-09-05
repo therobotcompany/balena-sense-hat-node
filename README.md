@@ -1,3 +1,5 @@
+SUPERSEDED by new repo https://github.com/therobotcompany/balena-sense-hat-node
+
 Forked from https://github.com/balena-io-playground/sense-hat-base-application
     - There are new commits to merge
 
