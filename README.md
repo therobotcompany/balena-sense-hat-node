@@ -1,6 +1,7 @@
-SUPERSEDED by new repo https://github.com/therobotcompany/balena-sense-hat-node
+# Balena Sense Hat Node
+This repo REPLACES to https://github.com/therobotacademy/sense-hat-base-application
 
-Forked from https://github.com/balena-io-playground/sense-hat-base-application
+Originally forked from https://github.com/balena-io-playground/sense-hat-base-application
     - There are new commits to merge
 
 **NOTE 1:** *This application communicates with the Sense Hat using the NodeJS library `node-sense-hat`*
